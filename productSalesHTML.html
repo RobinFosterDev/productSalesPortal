@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Product Sales Portal</title>
+	<!-- TODO: Import script and css files -->
+	<link rel="stylesheet" href="productSales.css">
+	<script src="productSalesScript.js"></script>
+</head>
+<body>
+	<div class="header">
+		<ul>
+		  <li><a href=""> <b>Solution Name</b></a></li>
+		</ul>
+	</div>
+
+	<div class="productTableContainer">
+		<div id="productTable" class="productTable">
+			<table class="centre">
+				<tr class="quoteNameInput">
+					<td  colspan="4">
+							Quote Name:
+							<input id="quoteFilename" type="text" name="quoteFilename">
+					</td>
+				</tr>
+				<tr>
+					<th>Product Name</th>
+					<th>Product Description</th>
+					<th>Quantity</th>
+					<th>Product Price</th>
+				</tr>
+				<tr>
+					<td>
+						Product A
+					</td>
+					<td>
+						This is an example product description that illustrates how the description of a product item will be displayed.
+					</td>
+					<td>
+						<input id="productAUnitQuantity" type="number" name="productA" value="0" min="">
+					</td>
+					<td>
+						$250.00
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Product B
+					</td>
+					<td>
+						This is an example product description that illustrates how the description of a product item will be displayed.
+					</td>
+					<td>
+						<input id="productBUnitQuantity" type="number" name="productB" value="0" min="0">
+					</td>
+					<td>
+						$100.00
+					</td>
+				</tr>
+				<tr class="finalCostRow">
+				<!-- 	<td class="emptyTableField">
+						
+					</td>
+					<td class="emptyTableField">
+						
+					</td> -->
+					<td colspan ="3">
+						Total Cost:
+					</td>
+					<td class="total" id="total">
+						$0
+					</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+			<div class="totalRow">		
+				<table width="100%">
+					<tr>
+						<th>
+							 
+							<!-- <button onclick='downloadCSV({ filename: "stock-data.csv" });'> Download CSV</button>  -->
+						</th>
+						<th>
+							<button onclick='generateFilename()'> Download CSV</button>
+							<button 
+							onclick="generateQuote()">Generate Quote
+							</button>
+						</th>
+<!-- 						<th class="total" id="total">
+							Total: $0
+						</th> -->
+						
+					</tr>
+				</table>
+			</div>	
+	
+	<!-- <a href='#' onclick='downloadCSV({ filename: "stock-data.csv" });'>Download CSV</a> -->
+	
+</body>
+</html>

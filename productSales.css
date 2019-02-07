@@ -1,0 +1,114 @@
+body{
+	font-family: 'Open Sans', sans-serif;
+}
+.productTableContainer{
+	text-align: center;
+}
+.productTable{
+	display: inline-block;
+	/*width: 1000px;
+*/}
+/* table.center{
+    margin-left:auto; 
+    margin-right:auto;
+}*/
+
+table{
+	margin-top: 15px;
+/*	outline: 2px solid black;*/
+}
+
+.centre table, .centre td, .centre th{
+  outline: 1px solid black;
+  border-spacing: 0;
+  text-align: left;
+}
+.centre td{
+/*	border: 1px solid black;*/
+	/*outline: 2px solid black;*/
+	padding: 15px;
+}
+.centre th{
+/*	border: 1px solid black;*/
+	/*outline: 2px solid black;*/
+	padding: 15px;
+	background-color: green;
+	color: white;
+}
+.centre tr:hover{
+	background-color: #f5f5f5;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: green;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+
+button{
+  background-color: green; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+ button:hover {
+  background-color: #111;
+ }
+.totalRow{
+  padding: 0px;
+  /*width: 100%;*/
+}
+
+.totalRow table{
+  float: right;
+/*  border: 1px solid black;*/
+}
+
+.totalRow th, .totalRow td{
+  text-align: right;
+}
+
+
+
+.generateButton{
+  float: right;
+}
+
+.finalCostRow td{
+  text-align: right;
+
+}
+.quoteNameInput td{
+  text-align: center;
+
+}
+
+/*.total td{
+  text-align: center;
+}
+*/
+
+
